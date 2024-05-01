@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Testcases" class="navigator-link ">
-                    <span>G:\GitQARepository\CurrentWorkSpace\ExampleFebruary26th2024Repository\TestngAutomation\ExecuteTestngTestcasesWithMethodLevel.xml</span>
+                    <span>F:\gitqarepository\current_workspace\April2024Repo\TestngAutomation\ExecuteTestngTestcasesWithClassLevel.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,6 +115,21 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Testcases" title="com.sgtesting.products.Products" class="method navigator-link" hash-for-method="deletProduct">deletProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testcases" title="com.sgtesting.users.Users" class="method navigator-link" hash-for-method="deletUser">deletUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testcases" title="com.sgtesting.products.Products" class="method navigator-link" hash-for-method="modifyProduct">modifyProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testcases" title="com.sgtesting.users.Users" class="method navigator-link" hash-for-method="modifyUser">modifyUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Testcases -->
@@ -142,6 +157,20 @@
                   <span class="method-name">createUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletUser">
+                  </a> <!-- deletUser -->
+                  <span class="method-name">deletUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyUser">
+                  </a> <!-- modifyUser -->
+                  <span class="method-name">modifyUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Testcases-class-passed -->
           <div class="suite-Testcases-class-passed">
@@ -164,12 +193,19 @@
                   <span class="method-name">deletProduct</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyProduct">
+                  </a> <!-- modifyProduct -->
+                  <span class="method-name">modifyProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Testcases-class-passed -->
         </div> <!-- panel Testcases -->
         <div panel-name="test-xml-Testcases" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">G:\GitQARepository\CurrentWorkSpace\ExampleFebruary26th2024Repository\TestngAutomation\ExecuteTestngTestcasesWithMethodLevel.xml</span>
+            <span class="header-content">F:\gitqarepository\current_workspace\April2024Repo\TestngAutomation\ExecuteTestngTestcasesWithClassLevel.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -178,16 +214,8 @@
 &lt;suite name=&quot;Testcases&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Users and Products&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.sgtesting.users.Users&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;createUser&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.sgtesting.users.Users --&gt;
-      &lt;class name=&quot;com.sgtesting.products.Products&quot;&gt;
-        &lt;methods&gt;
-          &lt;exclude name=&quot;modifyProduct&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.sgtesting.products.Products --&gt;
+      &lt;class name=&quot;com.sgtesting.users.Users&quot;/&gt;
+      &lt;class name=&quot;com.sgtesting.products.Products&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Users and Products --&gt;
 &lt;/suite&gt; &lt;!-- Testcases --&gt;
@@ -227,24 +255,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createUser')
 data.setCell(0, 2, 'com.sgtesting.users.Users')
-data.setCell(0, 3, 5);
+data.setCell(0, 3, 8);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'deletProduct')
 data.setCell(1, 2, 'com.sgtesting.products.Products')
-data.setCell(1, 3, 2);
+data.setCell(1, 3, 3);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'createProduct')
-data.setCell(2, 2, 'com.sgtesting.products.Products')
-data.setCell(2, 3, 1);
+data.setCell(2, 1, 'deletUser')
+data.setCell(2, 2, 'com.sgtesting.users.Users')
+data.setCell(2, 3, 2);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createProduct')
+data.setCell(3, 2, 'com.sgtesting.products.Products')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'modifyUser')
+data.setCell(4, 2, 'com.sgtesting.users.Users')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'modifyProduct')
+data.setCell(5, 2, 'com.sgtesting.products.Products')
+data.setCell(5, 3, 1);
 window.suiteTableData['Testcases']= { tableData: data, tableDiv: 'times-div-Testcases'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 ms</span>
+              <span class="suite-total-time">Total running time: 16 ms</span>
               <div id="times-div-Testcases">
               </div> <!-- times-div-Testcases -->
             </div> <!-- times-div -->
@@ -259,25 +299,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Testcases" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.sgtesting.users.Users</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">modifyUser</span>
-                <br/>
-                <span class="ignored-method-name">deletUser</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.sgtesting.products.Products</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">modifyProduct</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Testcases" class="panel">
@@ -295,28 +319,40 @@ return data;
                 <span class="method-name">createUser</span>
                 <span class="method-start">17 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deletUser</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">modifyUser</span>
+                <span class="method-start">33 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">26 ms</span>
+                <span class="method-start">36 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.sgtesting.products.Products</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">28 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">createProduct</span>
-                <span class="method-start">29 ms</span>
+                <span class="method-start">39 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">deletProduct</span>
-                <span class="method-start">32 ms</span>
+                <span class="method-start">42 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">modifyProduct</span>
+                <span class="method-start">47 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">35 ms</span>
+                <span class="method-start">49 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
